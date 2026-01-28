@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class MainProduct
+{
+  public static void main(String[] args) 
+  {	
+	DaoProduct dao = new DaoProduct();
+	Scanner sc = new Scanner(System.in);
+	do {
+		System.out.println("1=>Press Add Product");
+		System.out.println("2=>Press Show Details");
+		System.out.println("3=>Press Clear Card");
+		System.out.println("4=>Press Exit ");
+		 int key = sc.nextInt();
+		 sc.nextLine();
+		switch (key) 
+		{
+		case 1: 
+		{
+		  Product product = new Product();
+		  dao.addProduct(product);
+		  System.out.println("Enter the Product Name :");
+		  product.setName(sc.nextLine());
+		  System.out.println("Enter the Product brand :");
+		  product.setBrand(sc.nextLine());
+		  System.out.println("Enter the Product Price :");
+		  product.setPrice(sc.nextInt());
+			break;
+		}
+		case 2: 
+		{
+		  dao.showDetails();
+			break;
+		}
+		default:
+			System.out.println("Please Enter the valid Number");
+		}
+	}while(true);
+	
+	
+  }
+}

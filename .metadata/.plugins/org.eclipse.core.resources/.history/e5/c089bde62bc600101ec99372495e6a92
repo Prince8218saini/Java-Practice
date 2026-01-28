@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class DaoProduct
+{
+   ArrayList<Product> arrayList  = new ArrayList<Product>();
+   public void addProduct(Product p)
+   {
+	   arrayList.add(p);
+   }
+   public void showDetails()
+   { 
+	   System.out.println("You have Selected : "+arrayList.size()+" Products....\n");
+	   if(!arrayList.isEmpty()) 
+	   {
+		   System.out.println("Your Product Details....\n");
+	      for(Product product:arrayList) 
+	      {
+		   System.out.println(product);
+	      }
+	   }
+	   else
+	   {
+		   System.err.println("Your Card Empty....\n\n");
+	   }
+   }
+   public void clearDetails()
+   {
+	   arrayList.clear();
+	   System.out.println("Your Card is Clear Succesfully....\n\n");
+   }
+}

@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+D:\java_training\assingment-java\.metadata\.plugins\org.eclipse.jdt.core
+4044481760.index
+1865797976.index
+181524720.index
+522159564.index
+2249643126.index

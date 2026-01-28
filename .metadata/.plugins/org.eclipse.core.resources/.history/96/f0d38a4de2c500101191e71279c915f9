@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class DaoProduct
+{
+   ArrayList<Product> arrayList  = new ArrayList<Product>();
+   public void addProduct(Product p) {
+	   arrayList.add(p);
+	   
+   }
+}
